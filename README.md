@@ -1,36 +1,68 @@
-# Next.js + Tailwind CSS Example
+# Frontend Mentor - Stats preview card component solution
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Notes
+## Table of contents
 
-This is a modified version of the tailwindcss example for Next.js. The following changes have been made to it:
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
 
--   added i18n object to next.config.js to generate an html tag with language like this:
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-```html
-<html lang="en"></html>
-```
+## Overview
 
--   added example changes to styles/globals.css
--   added example changes to tailwind.config.js
--   added example components
--   remove api/hello.ts
+### The challenge
 
-## Deploy your own
+Users should be able to:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/ironcladmerc/next-frontendmentor-tailwind-starter&project-name=next-frontendmentor-tailwind-starter&repository-name=next-frontendmentor-tailwind-starter)
+-   View the optimal layout depending on their device's screen size
 
-## How to use
+### Screenshot
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+![](./screenshot.png)
 
-```bash
-npx create-next-app project-name -e https://github.com/ironcladmerc/next-frontendmentor-tailwind-starter
-```
+### Links
 
-```bash
-yarn create next-app project-name -e https://github.com/ironcladmerc/next-frontendmentor-tailwind-starter
-```
+-   Solution URL: [https://www.frontendmentor.io/solutions/stats-preview-card-component-with-nextjs-and-tailwind-NeDcGQiROy](https://www.frontendmentor.io/solutions/stats-preview-card-component-with-nextjs-and-tailwind-NeDcGQiROy)
+-   Live Site URL: [https://stats-preview-card-component-kappa-amber.vercel.app/](https://stats-preview-card-component-kappa-amber.vercel.app/)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## My process
+
+### Built with
+
+-   Flexbox
+-   [Tailwind](https://tailwindcss.com) - CSS Framework
+-   Mobile-first workflow
+-   [Next.js](https://nextjs.org/) - React framework
+
+### What I learned
+
+I learned to start out simple and build gradually. I had to build this twice, because the first time I was adding tailwind classes left and right, not knowing exactly what they were doing, and in the end I was left with a page that did not work the way I wanted it to, the image was resizing too much when making the browser larger.
+
+So I started from scratch and did some searching on how flexbox works, and I found some good tips, and I used those to build a new page that works much better.
+
+### Continued development
+
+I continue to learn Tailwind and what the various classes do and how to use them.
+
+### Useful resources
+
+-   [Object fit - cover does not work](https://forum.freecodecamp.org/t/object-fit-cover-does-not-work/237039/3) - This helped me for getting the image to fill the entire div when expanded to a larger browser size. I learned I had to specify the height of the image to get object-cover to work. I used h-full, and that was enough to get it to start working.
+
+-   [How to make div fill full height of parent in tailwind](https://stackoverflow.com/questions/63412303/how-to-make-div-fill-full-height-of-parent-in-tailwind) - This is an stackoverflow question which helped me understand how to use flex and flex-1 to get flex columns to be equal size.
+
+-   [Mix Blend Mode](https://tailwindcss.com/docs/mix-blend-mode) - This shows how to blend an image and a background color together, which was necessary for this project.
+
+## Author
+
+-   Frontend Mentor - [@ironcladmerc](https://www.frontendmentor.io/profile/ironcladmerc)
+
+-   Github - [@ironcladmerc](https://www.github.com/ironcladmerc)
